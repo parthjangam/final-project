@@ -1,0 +1,13 @@
+<h2>Generated Timetable</h2>
+<table>
+    <tr><th>Class</th><th>Subject</th><th>Faculty</th><th>Day</th><th>Time</th></tr>
+    {% for slot in timetables %}
+        <tr>
+            <td>{{ slot.class_info }}</td>
+            <td>{{ slot.subject }}</td>
+            <td>{{ slot.faculty }}</td>
+            <td>{{ slot.day }}</td>
+            <td>{{ slot.time_slot }}</td>
+        </tr>
+    {% endfor %}
+</table>
